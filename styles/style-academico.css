@@ -133,7 +133,12 @@ html {
         margin-bottom: 10px;   
     }
 
-    #hobbies_interesses {
+    #section_semestre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #projetos_realizados {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
