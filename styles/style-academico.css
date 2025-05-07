@@ -122,7 +122,6 @@ html {
 
     a:hover {
         color:rgb(243, 198, 0);
-        font-size: 17px;
     }
 
     nav {
@@ -168,7 +167,9 @@ html {
         border-radius: 10px;
     }
 
-    .projetos p {
+    .projetos a {
+        color: white;
+        text-decoration: none;
         
     }
 
