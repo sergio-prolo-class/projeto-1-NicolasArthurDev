@@ -7,26 +7,36 @@ html {
     box-sizing: inherit;
 }
 
+body > nav {
+    grid-area: nav;
+}
+
+body > section {
+    grid-area: section;
+}	
+
+body > footer {
+    grid-area: footer;
+}
+
+.icons {
+    width: 6%;
+    height: 6%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 /*------------- Estilo para celulares ou telas menores que 768 pixels -------------*/
 @media (max-width: 768px){
     body {
         background-color: black;
         color: white;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 4wm;
+        font-size: 4vw;
         max-width: 100%;
         line-height: 1.5;
         text-align: left;
         padding: 0 10px;
-    }
-
-    #imagem_pessoal {
-        width: 40%;
-        height: 40%;
-        border-radius: 50%;
-        margin-bottom: 20px;
-        margin: 25px auto;
-        border: 5px solid rgb(243, 198, 0);
     }
 
     .imagem-container {
@@ -39,6 +49,42 @@ html {
         color: white;
         text-decoration: underline solid rgb(243, 198, 0) 2px;  
     }
+
+    #section_semestre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #projetos_realizados {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .projetos {
+        border: 1px solid rgb(243, 198, 0);
+        margin: 10px;
+        border-radius: 10px;
+        width: 95%;
+        background-color: black;
+        color: white;
+        transition: 0.3s;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .projetos img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .projetos a {
+        color: white;
+        text-decoration: none;
+        
+    }
 }
 
 /*------------- Estilo para tablets ou telas menores que 1024 pixels --------------*/
@@ -47,13 +93,20 @@ html {
             background-color: black;
             color: white;
             font-family: 'Courier New', Courier, monospace;
-            font-size: 3vw;
+            font-size: 3.5vw;
             max-width: 100%;
             line-height: 1.5;
             text-align: left;
             padding: 0 10px;
         }
     
+        #menu ul li {
+            margin-bottom: 10px;
+            font-size: 6vw;
+            font-weight: bold;
+            padding: 10px;
+        }
+
         #imagem_pessoal {
             width: 40%;
             height: 40%;
@@ -73,6 +126,45 @@ html {
             color: white;
             text-decoration: underline solid rgb(243, 198, 0) 2px;  
         }
+
+        #section_semestre {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    
+        #projetos_realizados {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        
+        
+
+        .projetos {
+            border: 1px solid rgb(243, 198, 0);
+            margin: auto;
+            margin-bottom: 100px;
+            border-radius: 10px;
+            width: 90%;
+            background-color: black;
+            color: white;
+            transition: 0.3s;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    
+        .projetos img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    
+        .projetos a {
+            color: white;
+            text-decoration: none;
+            
+        }
     }
 
 /*------------- Estilo para desktop ou telas maiores que 1025 pixels --------------*/
@@ -86,10 +178,16 @@ html {
         line-height: 1.5;
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
-        grid-template-areas: "nav" "section" "footer";
+        grid-template-areas: 
+            "nav section footer";
         margin: 100px 20px;
     }
 
+    #menu ul li a, footer ul li a {
+        font-size: 25px;
+    }
+
+    
     h1 {
         font-size: 35px;
         margin-bottom: 0;
@@ -124,12 +222,8 @@ html {
         color:rgb(243, 198, 0);
     }
 
-    nav {
+    nav, footer {
         width: 100%;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;   
     }
 
     #section_semestre {
@@ -146,7 +240,7 @@ html {
         border: 1px solid rgb(243, 198, 0);
         margin: 10px;
         border-radius: 10px;
-        width: 60%;
+        width: 75%;
         background-color: black;
         color: white;
         transition: 0.3s;

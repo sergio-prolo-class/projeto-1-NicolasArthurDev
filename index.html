@@ -16,12 +16,17 @@
         </ul>
     </nav>
     <section id="sobremim">
+        <div class="button">
+            <audio id="player" src="audio/lofi.mp3" loop></audio>
+            <button onclick="document.getElementById('player').play()">Tocar música</button>
+         </div>
         <div class="imagem-container">
             <img id="imagem_pessoal" src="images/Nicolas.jpeg" alt="Foto pessoal de Nicolas Arhtur">
         </div>
         <h1>
             Sobre mim
         </h1>
+        <hr>
         <p>    
             Olá! Meu nome é Nicolas Arthur Raulino Oliveira, nascido em São José no estado de Santa Catarina no ano de 2005, atualmente tenho 19 anos, sou estudante do curso de <b>Análise e Desenvolvimento de Sistemas</b> do <b>Instituto Federal de Santa Catarina</b> e trabalho na empresa de desenvolvimento de sistemas <b>Jtech</b>.
         </p>
@@ -30,6 +35,7 @@
             Tenho experiência em projetos acadêmicos e estou sempre aberto a novas oportunidades de aprendizado e crescimento profissional.
             Tenho o sonho de me tornar um desenvolvedor full stack e contribuir para projetos inovadores que façam a diferença na vida das pessoas.
         </p>
+        <hr>
             <aside id="hobbies_interesses">
                 <div id="hobbies">
                     <h3>Hobbies</h3>
@@ -54,13 +60,14 @@
                     </ul>
                 </div>
             </aside>
+            <hr>
         </section>
     <footer>
         <h1>Meus Contatos</h1>
         <ul>
-            <li><a href="mailto:Nicolasarthur1806@gmail.com">E-mail</a></li>
-            <li><a href="https://www.linkedin.com/in/nicolas-arthur-raulino-oliveira/">Linkedin</a></li>
-            <li><a href="https://github.com/NicolasArthurDev">GitHub</a></li>
+            <li><a href="mailto:Nicolasarthur1806@gmail.com">E-mail<img id="icon1" class="icons" src="images/icons/mail.png" alt="E-mail"></a></li>
+            <li><a href="https://www.linkedin.com/in/nicolas-arthur-raulino-oliveira/">Linkedin<img id="icon2" class="icons" src="images/icons/linkedin.png" alt="linkedin"></a></li>
+            <li><a href="https://github.com/NicolasArthurDev">GitHub<img id="icon3" class="icons" src="images/icons/github.png" alt="Github"></a></li>
         </ul>
     </footer>
 </body>
